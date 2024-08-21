@@ -1,0 +1,74 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    margin: 5px auto;
+    border: 1px solid rgb(209, 203, 203);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px rgba(94, 92, 92, 0.1);
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="tel"]
+{
+    width: 90%;
+}
+
+span::after
+{
+    content: '*';
+    color: red;
+}
+#subRes::after {
+    content: "";
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="reset"]):not([type="submit"]) {
+    display: block;
+}
+
+input[type="reset"],
+input[type="submit"] {
+    width: 130px;
+    height: 50px;
+    background-color: rgb(83, 147, 83);
+    border-radius: 10px;
+    border: none;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background-color: rgb(95, 169, 95);
+}
+
+input[type="reset"] {
+    margin-left: 130px;
+    margin-right: 10px;
+}
+
+span {
+    display: block;
+}
+
+#first {
+    margin-left: 150px;
+}
+
+#upload {
+    border: 1px rgb(133, 125, 125);
+}
+
+select {
+    background-color: rgb(200, 198, 198);
+    height: 30px;
+}
