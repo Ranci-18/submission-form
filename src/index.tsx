@@ -50,11 +50,11 @@ const App: React.FC = () => {
                 <option value="audi">Audi</option>
             </select>
             <textarea name="message" id="message" cols={30} rows={10} placeholder="About yourself"></textarea>
-            <label htmlFor="">
-                <span id="subRes">Submit or Reset</span>
+            <span id="subRes">Submit or Reset</span>
+            <div id="grid">
                 <input type="reset" value="Reset" />
                 <input type="submit" value="Submit" />
-            </label>
+            </div>
         </form>
     )
 }

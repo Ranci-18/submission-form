@@ -51,9 +51,17 @@ input[type="submit"]:hover {
     background-color: rgb(95, 169, 95);
 }
 
-input[type="reset"] {
-    margin-left: 130px;
-    margin-right: 10px;
+#grid {
+    display: grid;
+    gap: auto;
+    grid-auto-flow: column;
+}
+
+@media screen and (max-width: 800px) {
+    #grid {
+        grid-auto-flow: row;
+        gap: 2%;
+    }
 }
 
 span {
